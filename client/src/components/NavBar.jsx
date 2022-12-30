@@ -22,15 +22,12 @@ function NavBar() {
   });
 
   return (
-    <>
-      <div className="flex justify-center text-white bg-black opacity-80 ">
-        Winter Deals! Free Shipping on Orders Over $2209
-      </div>
+    <div >
       <nav className=" h-12 text-pblue flex absolute bg-pgray w-full ">
-        <div className="flex flex-row gap-y-4 w-full md:w-full">
+        <div className="flex gap-y-4 w-full">
           <div>
             {" "}
-            <h1 className="font-bebas ml-16 text-3xl text-bold underline opacity-0 md:opacity-100 flex items-center justify-start w-full hover:text-pyellow">
+            <h1 className="font-bebas ml-16 text-2xl text-bold underline opacity-0 md:opacity-100 flex items-center justify-start w-full hover:text-pyellow">
               Real Fake Clothes
             </h1>
           </div>
@@ -72,7 +69,7 @@ function NavBar() {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 }
 

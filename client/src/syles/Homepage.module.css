@@ -3,28 +3,14 @@
   margin-top: 5%;
   margin-left: 1%;
 }
-.manPic {
-  width: 30em;
-  height: 80%;
-}
 
-.text {
-  margin-top: 12em;
-  margin-left: 20%;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  word-spacing: 1mm;
-}
 
 .title {
   color: #14213d;
   text-align: center;
   font-size: 70px;
   font-weight: bolder;
-  border-bottom: solid 3px black;
-  margin-bottom: 4px;
+  text-decoration: underline;
 }
 
 .shopButton {
@@ -32,4 +18,16 @@
   margin-top: 15em;
   height: 4rem;
   width: 8em;
+}
+.text2{
+  align-content: center;
+  justify-content: center;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: red;
+  
+  
 }
