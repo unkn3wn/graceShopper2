@@ -22,8 +22,8 @@ function NavBar() {
   });
 
   return (
-    <div >
-      <nav className=" h-12 text-pblue flex absolute bg-pgray w-full ">
+    <div>
+      <div className=" h-12 text-pblue flex absolute bg-pgray w-full mt-0">
         <div className="flex gap-y-4 w-full">
           <div>
             {" "}
@@ -68,7 +68,7 @@ function NavBar() {
             ) : null}
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

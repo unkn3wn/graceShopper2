@@ -1,33 +1,17 @@
-.sepImgWord {
-  display: flex;
-  margin-top: 5%;
-  margin-left: 1%;
-}
-
-
 .title {
   color: #14213d;
-  text-align: center;
   font-size: 70px;
   font-weight: bolder;
   text-decoration: underline;
 }
 
-.shopButton {
-  font-weight: bolder;
-  margin-top: 15em;
-  height: 4rem;
-  width: 8em;
-}
-.text2{
-  align-content: center;
+.wording{
   justify-content: center;
+  text-align: center;
 }
 
 .foot{
   display: flex;
   justify-content: space-evenly;
   background-color: red;
-  
-  
 }

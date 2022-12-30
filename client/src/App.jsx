@@ -13,7 +13,7 @@ import PaymentPage from "./components/PaymentPage";
 
 function App() {
   return (
-    <div className="bg-pgray min-h-screen">
+    <div >
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
