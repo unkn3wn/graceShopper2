@@ -7,7 +7,7 @@ function Home() {
   const nav = useNavigate();
   return (
     <div>
-      <section className="h-full w-full">
+      <section className="h-screen">
         <div className=" mt-0 justify-center text-center">
           <h1 className={styles.title}>Real Fake Clothes</h1>
           <h4>2209 Capstone Project</h4>
@@ -39,10 +39,10 @@ function Home() {
           </button>
         </div>
 
-        <div className="flex flex-row items-center justify-center text-gray-400 absolute bottom-0 w-full items-center p-6 bg-black">
-          <div className="flex flex-col items-center">
+        <div className="flex flex-row items-center justify-center text-white w-full absolute bottom-0 items-center bg-stone-600">
+          <div className="flex flex-col mt-10 mb-3 items-center space-x-10 ">
             <img
-              className="flex items-center justify-center relative rounded-full h-24 "
+              className="flex justify-center relative rounded-full h-24 "
               src={wilson}
               alt="model"
             />
@@ -63,7 +63,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-x-8">
+          <div className="flex flex-col mt-10 mb-3 items-center space-x-10">
             <img
               className="flex items-center justify-center relative rounded-full h-24 "
               src={ferni}
@@ -86,7 +86,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-x-8">
+          <div className="flex flex-col mt-10 mb-3 items-center space-x-10">
             <img
               className="flex items-center justify-center relative rounded-full h-24 "
               src={ugo}
