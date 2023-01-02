@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import useUsers from "../hooks/useUsers";
 import useCart from "../hooks/useCart";
+import styles from "../syles/Nav.module.css";
 
 function NavBar() {
   const { LogoutUser, selectedUser, fetchMe } = useUsers();
@@ -23,50 +24,38 @@ function NavBar() {
 
   return (
     <div>
-      <div className=" h-12 text-pblue flex absolute bg-pgray w-full mt-0">
-        <div className="flex gap-y-4 w-full">
-          <div>
-            {" "}
-            <h1 className="font-bebas ml-16 text-2xl text-bold underline opacity-0 md:opacity-100 flex items-center justify-start w-full hover:text-pyellow">
-              Real Fake Clothes
-            </h1>
-          </div>
-          <div className=" flex flex-row items-center justify-end w-full gap-x-16 mr-16">
-            <Link className="font-bold flex hover:text-pyellow" to="/products">
-              Home
-            </Link>
-            {selectedUser.email === "Guest" ? (
-              <>
-                <Link
-                  className="font-bold flex hover:text-pyellow"
-                  to="/register"
-                >
-                  Register
-                </Link>
+      <div className={styles.navbar}>
 
-                <Link className="font-bold flex hover:text-pyellow" to="/login">
-                  Sign in
-                </Link>
-              </>
-            ) : null}
-            {selectedUser.email !== "Guest" ? (
-              <>
-                <Link
-                  className="font-bold flex hover:text-pyellow"
-                  onClick={() => {
-                    LogoutUser();
-                    navigate("/products");
-                    window.location.reload(true);
-                  }}
-                >
-                  Logout
-                </Link>
-                <Link className="font-bold flex hover:text-pyellow" to="/Cart">
-                  Cart ({total})
-                </Link>
-              </>
-            ) : null}
-          </div>
+        <div className={styles.navbarLinks}>
+
+          <a className={styles.toggleButton}>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+          </a>
+
+          <Link to="/products">Home</Link>
+          {selectedUser.email === "Guest" ? (
+            <>
+              <Link to="/register">Register</Link>
+
+              <Link to="/login">Sign in</Link>
+            </>
+          ) : null}
+          {selectedUser.email !== "Guest" ? (
+            <>
+              <Link
+                onClick={() => {
+                  LogoutUser();
+                  navigate("/products");
+                  window.location.reload(true);
+                }}
+              >
+                Logout
+              </Link>
+              <Link to="/Cart">Cart ({total})</Link>
+            </>
+          ) : null}
         </div>
       </div>
     </div>
