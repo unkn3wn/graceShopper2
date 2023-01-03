@@ -35,12 +35,9 @@ section {
     border-radius:16px;
 }
 
-.card:hover .allProducts{
-    filter:blur(0.8px);
-}
+
 
 .card .allProducts:hover{
-    filter: blur(0px);
     background-color: black;
     transform: scale(1.1);
     color:white;

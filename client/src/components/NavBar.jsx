@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import useUsers from "../hooks/useUsers";
 import useCart from "../hooks/useCart";
 import styles from "../syles/Nav.module.css";
-import {FaBars} from "react-icons/fa"
+import { FaBars } from "react-icons/fa";
 
 function NavBar() {
   const { LogoutUser, selectedUser, fetchMe } = useUsers();
@@ -27,58 +27,56 @@ function NavBar() {
     <div>
       <input type="checkbox" id="toggle"></input>
       <nav>
+        <a className={styles.navBarBran}>Real Fake Cloths</a>
 
-        <a className={styles.navBarBran}>
-          Menu Brand
-        </a>
+        <label className={styles.navBarToggler} for="toggle">
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </label>
 
-      <label className={styles.navBarToggler} for="toggle">
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-      </label>
-      
         <ul className={styles.navList}>
-
-
           <li className={styles.navItem}>
-          <Link className={styles.navLink} to="/products">Home</Link>
+            <Link className={styles.navLink} to="/products">
+              Home
+            </Link>
           </li>
 
           <li className={styles.navItem}>
-          {selectedUser.email === "Guest" ? (
-            <>
-              <Link className={styles.navLink} to="/register">Register</Link>
-            
-                <Link className={styles.navLink} to="/login">Sign in</Link>
-              
-            </>
-          ) : null}
+            {selectedUser.email === "Guest" ? (
+              <>
+                <Link className={styles.navLink} to="/register">
+                  Register
+                </Link>
+
+                <Link className={styles.navLink} to="/login">
+                  Sign in
+                </Link>
+              </>
+            ) : null}
           </li>
           <li className={styles.navItem}>
-          {selectedUser.email !== "Guest" ? (
-            <>
-              <Link
-              className={styles.navLink}
-                onClick={() => {
-                  LogoutUser();
-                  navigate("/products");
-                  window.location.reload(true);
-                }}
-              >
-                Logout
-              </Link>
-              <Link className={styles.navLink} to="/Cart">Cart ({total})</Link>
-            </>
-          ) : null}
+            {selectedUser.email !== "Guest" ? (
+              <>
+                <Link
+                  className={styles.navLink}
+                  onClick={() => {
+                    LogoutUser();
+                    navigate("/products");
+                    window.location.reload(true);
+                  }}
+                >
+                  Logout
+                </Link>
+                <Link className={styles.navLink} to="/Cart">
+                  Cart ({total})
+                </Link>
+              </>
+            ) : null}
           </li>
-          
         </ul>
       </nav>
     </div>
-
-
-
   );
 }
 

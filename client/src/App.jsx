@@ -13,7 +13,7 @@ import PaymentPage from "./components/PaymentPage";
 
 function App() {
   return (
-    <div className="bg-stone-400 ">
+    <div>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

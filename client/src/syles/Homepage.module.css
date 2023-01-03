@@ -15,3 +15,21 @@
   justify-content: space-evenly;
   background-color: red;
 }
+
+.front{
+  margin-top: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 675px){
+  .tittle{
+    top:1000px;
+  }
+  .front{
+    /* mt-0 justify-center text-center */
+    margin-top: 25%;
+    justify-content: center;
+    text-align: center;
+  }
+}

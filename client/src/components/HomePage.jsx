@@ -7,12 +7,12 @@ function Home() {
   const nav = useNavigate();
   return (
     <div>
-      {/* <section className="h-screen">
-        <div className=" mt-0 justify-center text-center">
+      <div className="h-screen">
+        <div className={styles.front}>
           <h1 className={styles.title}>Real Fake Clothes</h1>
           <button
             href="#_"
-            class="relative inline-flex items-center px-8 py-1 overflow-hidden text-lg font-medium text-white border-2 border-black rounded-full hover:text-white group hover:bg-gray-50 mt-14"
+            class="relative inline-flex items-center px-8 py-1 overflow-hidden text-lg font-medium text-black-300 border-2 border-black rounded-full hover:text-white group hover:bg-gray-50 mt-14"
             onClick={() => {
               nav("/products");
             }}
@@ -108,7 +108,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </div>
     </div>
   );
 }
