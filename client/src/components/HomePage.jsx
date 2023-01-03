@@ -7,7 +7,7 @@ function Home() {
   const nav = useNavigate();
   return (
     <div>
-      <section className="h-screen">
+      {/* <section className="h-screen">
         <div className=" mt-0 justify-center text-center">
           <h1 className={styles.title}>Real Fake Clothes</h1>
           <button
@@ -108,7 +108,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

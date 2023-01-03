@@ -25,47 +25,32 @@ function NavBar() {
 
   return (
     <div>
-      {/* <div className={styles.navbar}>
-
-        <div className={styles.navbarLinks}>
-
-
-          
-
-
-       
-
-
-
-
-          
-
-
-
-          <button className="smallScreenIcon"></button>
-        </div>
-      </div> */}
-
-
+      <input type="checkbox" id="toggle"></input>
       <nav>
 
         <a className={styles.navBarBran}>
           Menu Brand
         </a>
+
+      <label className={styles.navBarToggler} for="toggle">
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+      </label>
+      
         <ul className={styles.navList}>
 
 
           <li className={styles.navItem}>
-          <Link to="/products">Home</Link>
+          <Link className={styles.navLink} to="/products">Home</Link>
           </li>
 
           <li className={styles.navItem}>
           {selectedUser.email === "Guest" ? (
             <>
               <Link className={styles.navLink} to="/register">Register</Link>
-              <li className={styles.navItem}>
+            
                 <Link className={styles.navLink} to="/login">Sign in</Link>
-              </li>
               
             </>
           ) : null}
