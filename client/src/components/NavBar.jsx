@@ -45,13 +45,15 @@ function NavBar() {
           <li className={styles.navItem}>
             {selectedUser.email === "Guest" ? (
               <>
+            
                 <Link className={styles.navLink} to="/register">
                   Register
                 </Link>
-
+            <li></li>
                 <Link className={styles.navLink} to="/login">
                   Sign in
                 </Link>
+                
               </>
             ) : null}
           </li>
