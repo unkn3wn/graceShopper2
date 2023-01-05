@@ -21,13 +21,19 @@
   margin: auto;
 }
 
-.cards {
+.cards1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.cards2 {
+  justify-content: space-around;
+  background-color: grey;
   margin-top: 10px;
-  border-radius: 50px;
-  align-items: center;
-  background-color: darkgray;
   margin-bottom: 10px;
   width: 200px;
+  border-radius: 50px;
 }
 
 .name {
@@ -62,15 +68,44 @@ footer {
 .linkLog {
   width: 105px;
   margin-top: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 24%;
 }
 
 @media screen and (max-width: 675px) {
   .front {
-    /* mt-0 justify-center text-center */
     margin-top: 25%;
     justify-content: center;
     text-align: center;
+  }
+
+  .namePlusLinks {
+    margin-right: 100px;
+    display: flex;
+    margin-top: 10px;
+  }
+  .cards1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .profilePic {
+    margin-left: 20px;
+  }
+  .gitImg {
+    margin-left: 40px;
+  }
+  .linkLog {
+    margin-left: 40px;
+  }
+  .name {
+    margin-top: 20px;
+  }
+
+  footer {
+    height: 340px;
   }
 }

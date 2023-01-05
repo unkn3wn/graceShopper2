@@ -35,55 +35,59 @@ function Home() {
           <span class="relative p-4 ">Shop Now</span>
         </button>
         <footer>
-          <div className={styles.cards}>
-            <img className={styles.profilePic} src={wilson} alt="model" />
-            <p className={styles.name}>Wilson Chen</p>
-            <div>
-              <a href="https://github.com/Wilsonrchen" target="_blank" class>
-                <img className={styles.gitImg} src="githublogo.jpg" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/wilsonrchen/"
-                target="_blank"
-                
-              >
-                {" "}
-                <img  className={styles.linkLog} src="LinkedIn.jpg" />
-              </a>
+          {/* all cards */}
+          <div className={styles.cards1}>
+            <div className={styles.cards2}>
+              <img className={styles.profilePic} src={wilson} alt="model" />
+              <div className={styles.namePlusLinks}>
+                <p className={styles.name}>Wilson Chen</p>
+                <a href="https://github.com/Wilsonrchen" target="_blank" class>
+                  <img className={styles.gitImg} src="githublogo.jpg" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/wilsonrchen/"
+                  target="_blank"
+                >
+                  {" "}
+                  <img className={styles.linkLog} src="LinkedIn.jpg" />
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.cards}>
-            <img className={styles.profilePic} src={ferni} alt="model" />
-            <p className={styles.name}>Fernando Reyes</p>
-            <div>
-              <a href="https://github.com/unkn3wn" target="_blank">
-                <img className={styles.gitImg} src="githublogo.jpg" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/fernando-reyes-673860240/"
-                target="_blank"
-              >
-                {" "}
-                <img className={styles.linkLog} src="LinkedIn.jpg" />
-              </a>
+            <div className={styles.cards2}>
+              <img className={styles.profilePic} src={ferni} alt="model" />
+              <div className={styles.namePlusLinks}>
+                <p className={styles.name}>Fernando Reyes</p>
+
+                <a href="https://github.com/unkn3wn" target="_blank">
+                  <img className={styles.gitImg} src="githublogo.jpg" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/fernando-reyes-673860240/"
+                  target="_blank"
+                >
+                  {" "}
+                  <img className={styles.linkLog} src="LinkedIn.jpg" />
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.cards}>
-            <img className={styles.profilePic} src={ugo} alt="model" />
-            <p className={styles.name}> Ugonna Duru</p>
-            <div>
-              <a href="https://github.com/Uduru10" target="_blank">
-                <img className={styles.gitImg} src="githublogo.jpg" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ugo-duru-780aa6257/"
-                target="_blank"
-              >
-                {" "}
-                <img className={styles.linkLog} src="LinkedIn.jpg" />
-              </a>
+            <div className={styles.cards2}>
+              <img className={styles.profilePic} src={ugo} alt="model" />
+
+              <div className={styles.namePlusLinks}>
+                <p className={styles.name}> Ugonna Duru</p>
+                <a href="https://github.com/  Uduru10" target="_blank">
+                  <img className={styles.gitImg} src="githublogo.jpg" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ugo-duru-780aa6257/"
+                  target="_blank"
+                >
+                  {" "}
+                  <img className={styles.linkLog} src="LinkedIn.jpg" />
+                </a>
+              </div>
             </div>
           </div>
         </footer>
