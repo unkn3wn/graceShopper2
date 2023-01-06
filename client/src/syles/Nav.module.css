@@ -17,7 +17,6 @@ nav .navBarBran {
 nav .navList {
   display: flex;
 }
-
 nav .navList .navItem {
   cursor: pointer;
   height: 100%;
