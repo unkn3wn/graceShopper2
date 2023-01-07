@@ -24,7 +24,8 @@ function NavBar() {
   });
 
   return (
-    <div>
+    <div >
+      {/* to make the drop down work. Acts like a switch  */}
       <input type="checkbox" id="toggle"></input>
       <nav>
         <a className={styles.navBarBran}>Real Fake Cloths</a>
