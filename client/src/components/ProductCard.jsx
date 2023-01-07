@@ -34,7 +34,19 @@ export default function ProductCard({ product, setError }) {
             >
               <div>
                 {product.description}{" "}
-                <Button
+                
+              </div>{" "}
+            </div>
+          </div>
+        </div>
+
+        <Box sx={{ display: "flex", mt: 3 }}>
+          <div>
+            <Typography level="body4">Total price:</Typography>
+            <Typography fontSize="lg" fontWeight="lg">
+              ${product.price}
+            </Typography>
+            <Button
                   className="focus:ring focus:ring-customyellow"
                   variant="contained"
                   onClick={async () => {
@@ -69,17 +81,6 @@ export default function ProductCard({ product, setError }) {
                   add to cart
                   <AddShoppingCartOutlinedIcon />
                 </Button>
-              </div>{" "}
-            </div>
-          </div>
-        </div>
-
-        <Box sx={{ display: "flex", mt: 3 }}>
-          <div>
-            <Typography level="body4">Total price:</Typography>
-            <Typography fontSize="lg" fontWeight="lg">
-              ${product.price}
-            </Typography>
           </div>
         </Box>
       </Card>

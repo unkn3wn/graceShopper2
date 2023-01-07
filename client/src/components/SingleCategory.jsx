@@ -3,8 +3,7 @@ import useCategories from "../hooks/useCategory";
 import useProducts from "../hooks/useProduct";
 import { useParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
-import Categories from "./Categories";
-import Carousel from "./Carousel";
+import Categories from "./Categories"
 import styles from "../syles/Products.module.css";
 
 export default function SingleCategory() {
@@ -35,9 +34,7 @@ export default function SingleCategory() {
   console.log("CategoryProducts", CategoryProducts);
   return (
     <>
-      <section className="bg-black">
-        <Carousel />
-      </section>
+      
 
       <section className={styles.page2}>
         <div>

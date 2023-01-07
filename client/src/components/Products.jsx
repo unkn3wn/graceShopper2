@@ -4,7 +4,6 @@ import ProductCard from "./ProductCard";
 import Categories from "./Categories";
 import styles from "../syles/Products.module.css";
 import useCart from "../hooks/useCart";
-import Carousel from "./Carousel";
 
 export default function Products() {
   const { products, fetchProducts } = useProducts();
@@ -16,9 +15,7 @@ export default function Products() {
   }, []);
   return (
     <>
-      <section className="bg-black">
-        <Carousel />
-      </section>
+     
 
       <section className={styles.page2}>
         <div>
