@@ -1,10 +1,3 @@
-html,
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
 section {
   display: block;
   height: 100%;
@@ -25,7 +18,7 @@ section {
   flex-wrap: wrap;
 }
 .allProducts {
-  background-color: white;
+  background-color:grey;
   display: flex;
   flex-direction: column;
   margin-top: 2%;
@@ -42,14 +35,6 @@ section {
   transition: 1s;
 }
 
-.img {
-  justify-content: center;
-  align-content: center;
-  height: 14em;
-  width: 14em;
-  margin-left: 1em;
-}
-
 .text {
   color: yellow;
   text-align: center;
@@ -61,7 +46,17 @@ section {
   font-weight: bold;
   font-size: medium;
 }
+.pricingButtonn{
+  display: flex;
 
+}
+.imgProducts{
+  width: 200px;
+  height: 200px;
+}
+.imgDescription{
+  display: flex;
+}
 /* media screen max width 935 px */
 @media screen and (max-width: 935px) {
 
