@@ -7,3 +7,14 @@
 .online {
   font-family: "Bebas Neue", cursive;
 }
+
+
+/* media screen max width 935 px */
+@media screen and (max-width: 935px) {
+
+}
+/* media screen max width 675 px */
+@media screen and (max-width: 675px) {
+
+    
+}

@@ -32,6 +32,8 @@ export default function Carousel() {
         ></button>
       </div>
       <div class="carousel-inner relative w-full overflow-hidden">
+        
+        {/* edit this  */}
         <div class="carousel-item active float-left w-full">
           <div class="text-white justify-items-start m-48">
             <h1 class="font-bold text-3xl my-4">Risk Free!</h1>
@@ -50,6 +52,9 @@ export default function Carousel() {
               {" "}
               read more
             </button>
+
+
+
           </div>
         </div>
         <div class="carousel-item float-left w-full">

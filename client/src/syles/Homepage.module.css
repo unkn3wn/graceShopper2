@@ -3,6 +3,7 @@
   font-size: 70px;
   font-weight: bolder;
   text-decoration: underline;
+  margin-top:150px;
 }
 
 .wording {
@@ -13,6 +14,7 @@
 .front {
   justify-content: center;
   text-align: center;
+  
 }
 .profilePic {
   width: 80px;

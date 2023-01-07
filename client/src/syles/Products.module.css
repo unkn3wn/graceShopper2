@@ -1,66 +1,73 @@
-html,body{
-    margin: 0 ;
-    height:100%;
-    width:100%;
-    padding:0;
-
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 section {
-    display: block;
-    height:100%;
-    width:100%;
-    padding: 100px;
-    padding-left: 0px;
-    padding-right:0px;
-    box-sizing:border-box;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-sizing: border-box;
 }
 
-.page2{
-    display:flex;
-    margin-top:0px;
+.page2 {
+  display: flex;
+  margin-top: 0px;
 }
 
-.card{
-    display: flex;
-    flex-wrap: wrap;
+.card {
+  display: flex;
+  flex-wrap: wrap;
 }
-.allProducts{
-    background-color:white;
-    display:flex;
-    flex-direction: column;
-    margin-top:2%;
-    margin-left:5%;
-    margin-right:1em;
-    margin-bottom:2em;
-    border-radius:16px;
-}
-
-
-
-.card .allProducts:hover{
-    background-color: black;
-    transform: scale(1.1);
-    color:white;
-    transition:1s;
+.allProducts {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  border-radius: 16px;
 }
 
-.img{
-    justify-content: center;
-    align-content: center;
-    height: 14em;
-    width:14em;
-    margin-left: 1em;
+.card .allProducts:hover {
+  background-color: black;
+  transform: scale(1.1);
+  color: white;
+  transition: 1s;
 }
 
-.text{
-    color:yellow;
-    text-align: center;
+.img {
+  justify-content: center;
+  align-content: center;
+  height: 14em;
+  width: 14em;
+  margin-left: 1em;
 }
-.price{
-    color:blue;
-    text-align: right;
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: medium;
+
+.text {
+  color: yellow;
+  text-align: center;
 }
- 
+.price {
+  color: blue;
+  text-align: right;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* media screen max width 935 px */
+@media screen and (max-width: 935px) {
+
+}
+/* media screen max width 675 px */
+@media screen and (max-width: 675px) {
+
+    
+}
