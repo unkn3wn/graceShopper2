@@ -14,18 +14,17 @@ export default function ProductCard({ product, setError }) {
 
   return (
     <div className={styles.allProducts} key={product}>
-      <Card sx={{ width: 370, height: 350 }}>
-        <Typography level="h5" fontSize="md" sx={{ mb: 1 }}>
+      <Card sx={{ width: 300, height: 350 }}>
+        <h1 className={styles.productName}>
           {product.name}
-        </Typography>
-
-        <div className={styles.imgDescription}>
-          {product.description}{" "}
+        </h1>
+    
+        <div className={styles.productimg}>
           <img className={styles.imgProducts} src={product.imageUrl} />
         </div>
 
         <div className={styles.pricingButtonn}>
-          <h1>Price:$ {product.price}</h1>
+          <h1 className={styles.pricing}>Price: ${product.price}</h1>
           <Button
             className="focus:ring focus:ring-customyellow"
             variant="contained"

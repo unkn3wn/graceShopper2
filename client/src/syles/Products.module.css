@@ -13,19 +13,48 @@ section {
   margin-top: 0px;
 }
 
-.card {
-  display: flex;
-  flex-wrap: wrap;
-}
 .allProducts {
-  background-color:grey;
+  background-color: #404040;
   display: flex;
   flex-direction: column;
   margin-top: 2%;
   margin-left: 5%;
   margin-right: 1em;
   margin-bottom: 2em;
-  border-radius: 16px;
+  border-radius: 20px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productName {
+  font-weight: bolder;
+  text-align: center;
+  color: yellow;
+}
+
+.imgProducts {
+  width: 200px;
+  height: 200px;
+}
+.productimg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.pricingButtonn {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+.pricing {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: larger;
+  letter-spacing: 1px;
+  margin-top: 8px;
 }
 
 .card .allProducts:hover {
@@ -35,34 +64,9 @@ section {
   transition: 1s;
 }
 
-.text {
-  color: yellow;
-  text-align: center;
-}
-.price {
-  color: blue;
-  text-align: right;
-  margin-right: 20px;
-  font-weight: bold;
-  font-size: medium;
-}
-.pricingButtonn{
-  display: flex;
-
-}
-.imgProducts{
-  width: 200px;
-  height: 200px;
-}
-.imgDescription{
-  display: flex;
-}
 /* media screen max width 935 px */
 @media screen and (max-width: 935px) {
-
 }
 /* media screen max width 675 px */
 @media screen and (max-width: 675px) {
-
-    
 }
