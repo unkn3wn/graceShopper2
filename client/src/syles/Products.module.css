@@ -26,6 +26,7 @@ section {
 .card {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 150px;
 }
 
 .productName {

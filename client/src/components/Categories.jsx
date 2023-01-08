@@ -2,6 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useCategories from "../hooks/useCategory";
 import useProducts from "../hooks/useProduct";
+import styles from "../syles/Categories.module.css"
 
 export default function Categories() {
   const [prodId, setProdId] = useState("");
@@ -31,8 +32,9 @@ export default function Categories() {
   return (
     <>
       {" "}
-      <div className="mx-10 justify-center flex flex-col items-center ">
-        <h1 className="text-3xl text-pyellow mb-6">Categories</h1>
+      <div className={styles.allCategoris}>
+        <h1 className={styles.title}>Categories</h1>
+       
 
         {categories.map((category) => {
           return (
