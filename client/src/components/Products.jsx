@@ -15,32 +15,31 @@ export default function Products() {
   }, []);
   return (
     <>
-     
-
       <section className={styles.page2}>
-        <div>
-          <Categories />
-        </div>
-
-        <div role="alert">
-          {error && (
-            <h1 className="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700 sticky -m-40 top-1/2  transform -translate-x-1/4 -translate-y-1/2">
-              {error}
-            </h1>
-          )}
-        </div>
-
-        <div className={styles.card}>
-          {products.map((product) => {
-            return (
-              <ProductCard
-                product={product}
-                createOrderswithProduct={createOrderswithProduct}
-                error={error}
-                setError={setError}
-              />
-            );
-          })}
+        <div >
+          <div className={styles.catergoriesMakeRow}>
+             <Categories />
+          </div>
+         
+          <div role="alert">
+            {error && (
+              <h1 className="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700 sticky -m-40 top-1/2  transform -translate-x-1/4 -translate-y-1/2">
+                {error}
+              </h1>
+            )}
+          </div>
+          <div className={styles.card}>
+            {products.map((product) => {
+              return (
+                <ProductCard
+                  product={product}
+                  createOrderswithProduct={createOrderswithProduct}
+                  error={error}
+                  setError={setError}
+                />
+              );
+            })}
+          </div>
         </div>
       </section>
     </>

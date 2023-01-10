@@ -33,14 +33,22 @@ export default function Categories() {
     <>
       {" "}
       <div className={styles.allCategoris}>
-        <h1 className={styles.title}>Categories</h1>
+        <h1 
+       onClick={() => {
+        navigate(`/products`);
+      }}
+        className={styles.title}>Products</h1>
        
-
+{/* <select>
+  <option value="">Sort By a Category</option>
+  
+</select> */}
         {categories.map((category) => {
           return (
-            <div className="mb-5 ">
+            <div className={styles.allButtons}>
               <button
                 href="#_"
+                // all buttons
                 class="relative px-6 py-1 overflow-hidden font-medium text-black-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group"
                 onClick={() => {
                   navigate(`/categories/${category.id}`);

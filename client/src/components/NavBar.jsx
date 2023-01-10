@@ -39,7 +39,7 @@ function NavBar() {
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link className={styles.navLink} to="/products">
-              Home
+              Products
             </Link>
           </li>
 

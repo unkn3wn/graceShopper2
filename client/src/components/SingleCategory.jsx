@@ -37,7 +37,7 @@ export default function SingleCategory() {
       
 
       <section className={styles.page2}>
-        <div>
+        <div className={styles.catergoriesMakeRow}>
           <Categories />
         </div>
         <div role="alert">
