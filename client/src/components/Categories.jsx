@@ -47,7 +47,7 @@ export default function Categories() {
         className={styles.dropdown}>
           <button className={styles.dropbtn}>Filter</button>
           <div className={styles.dropdowncontent}>
-          <a>Filter</a>
+          <a>All Products</a>
           {categories.map((category) => {
             return (
               
