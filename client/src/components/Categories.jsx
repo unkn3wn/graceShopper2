@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useCategories from "../hooks/useCategory";
 import useProducts from "../hooks/useProduct";
-import styles from "../syles/Categories.module.css"
+import styles from "../syles/Categories.module.css";
 
 export default function Categories() {
   const [prodId, setProdId] = useState("");
@@ -33,16 +33,32 @@ export default function Categories() {
     <>
       {" "}
       <div className={styles.allCategoris}>
-        <h1 
-       onClick={() => {
-        navigate(`/products`);
-      }}
-        className={styles.title}>Products</h1>
-       
-{/* <select>
-  <option value="">Sort By a Category</option>
-  
-</select> */}
+        <h1
+          onClick={() => {
+            navigate(`/products`);
+          }}
+          className={styles.title}
+        >
+          Products
+        </h1>
+
+        <div 
+         
+        className={styles.dropdown}>
+          <button className={styles.dropbtn}>Filter</button>
+          <div className={styles.dropdowncontent}>
+          <a>Filter</a>
+          {categories.map((category) => {
+            return (
+              
+              <a href={`/categories/${category.id}`}>
+                {category.name}
+              </a>
+            );
+          })}
+          </div>
+        </div>
+
         {categories.map((category) => {
           return (
             <div className={styles.allButtons}>

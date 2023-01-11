@@ -1,4 +1,3 @@
-
 .page2 {
   display: flex;
   margin-top: 0px;
@@ -59,11 +58,14 @@
 
 /* media screen max width 935 px */
 @media screen and (max-width: 935px) {
-.catergoriesMakeRow{
-  background-color: black;
-}
-
-
+  .catergoriesMakeRow {
+    background-color: black;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    margin-left: 2px;
+  }
 }
 /* media screen max width 675 px */
 @media screen and (max-width: 675px) {
