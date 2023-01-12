@@ -15,14 +15,10 @@ export default function ProductCard({ product, setError }) {
   return (
     <div className={styles.allProducts} key={product}>
       <Card sx={{ width: 300, height: 350 }}>
-        <h1 className={styles.productName}>
-          {product.name}
-        </h1>
-    
-        <div className={styles.productimg}>
+        <div className={styles.productNameImg}>
+          <h1 className={styles.productName}>{product.name}</h1>
           <img className={styles.imgProducts} src={product.imageUrl} />
         </div>
-
         <div className={styles.pricingButtonn}>
           <h1 className={styles.pricing}>Price: ${product.price}</h1>
           <Button

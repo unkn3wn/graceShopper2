@@ -42,20 +42,13 @@ export default function Categories() {
           Products
         </h1>
 
-        <div 
-         
-        className={styles.dropdown}>
+        <div className={styles.dropdown}>
           <button className={styles.dropbtn}>Filter</button>
           <div className={styles.dropdowncontent}>
-          <a>All Products</a>
-          {categories.map((category) => {
-            return (
-              
-              <a href={`/categories/${category.id}`}>
-                {category.name}
-              </a>
-            );
-          })}
+            <a>All Products</a>
+            {categories.map((category) => {
+              return <a href={`/categories/${category.id}`}>{category.name}</a>;
+            })}
           </div>
         </div>
 
