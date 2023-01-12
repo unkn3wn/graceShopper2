@@ -16,7 +16,7 @@ export default function User() {
   const { RegisterUser, LoginUser } = useUsers();
   const { fetchCart } = useCart();
   return (
-    <>
+    <div className={styles.page}>
       <form
         className={styles.everyinput}
         onSubmit={async (event) => {
@@ -62,59 +62,63 @@ export default function User() {
         }}
       >
         {error && <h5>{error}</h5>}
-        <div className={styles.ep}>
-          <label>Enter Email or Username</label>
-          <input
-            className={styles.one}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="text"
-            placeholder="Email"
-          />
-          <label>Enter </label>
-          <input
-            className={styles.one}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            placeholder="password"
-          />
-        </div>
 
-        {method === "register" ? (
-          <div>
-            <label>First Name: </label>
+        <div className={styles.inputs}>
+          <div className={styles.ep}>
+            <label>Enter Email or Username</label>
             <input
-              className={styles.two}
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
+              className={styles.one}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               type="text"
-              placeholder="First Name"
+              placeholder="Email"
             />
-            <label>Last Name: </label>
+            <label>Enter </label>
             <input
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              type="text"
-              placeholder="Last Name"
-            />{" "}
+              className={styles.one}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
+              placeholder="password"
+            />
           </div>
-        ) : null}
 
-        <button class="relative inline-block text-lg group mt-10">
-          <span class="relative z-10 block px-2 py-2 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-            <span class="absolute inset-0 w-full h-full px-3 py-3rounded-lg bg-gray-50"></span>
-            <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
-            <span class="relative">
-              {method === "register" ? "Register" : "Login"}
+          {method === "register" ? (
+            <div>
+              <label>First Name: </label>
+              <input
+                className={styles.one}
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                type="text"
+                placeholder="First Name"
+              />
+              <label>Last Name: </label>
+              <input
+                className={styles.one}
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                type="text"
+                placeholder="Last Name"
+              />{" "}
+            </div>
+          ) : null}
+
+          <button class="relative inline-block text-lg group mt-10 ">
+            <span class="relative z-10 block px-2 py-2 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+              <span class="absolute inset-0 w-full h-full px-3 py-3rounded-lg bg-gray-50"></span>
+              <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+              <span class="relative">
+                {method === "register" ? "Register" : "Login"}
+              </span>
             </span>
-          </span>
-          <span
-            class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
-            data-rounded="rounded-lg"
-          ></span>
-        </button>
+            <span
+              class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+              data-rounded="rounded-lg"
+            ></span>
+          </button>
+        </div>
       </form>
-    </>
+    </div>
   );
 }

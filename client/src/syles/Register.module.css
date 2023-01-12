@@ -1,16 +1,24 @@
-.everyinput{
+.page{
+    height: 100vh;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+.everyinput{ 
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    margin-top: 10em;
     align-items: center;
-    
+   
+    align-items: center;
 }
-
 .one{
-    display:flex;
+    background-color: white;
+    display: flex;
     margin-bottom: 3em;
+    width: 300px;
 }
 
-.two{
-   margin-right: 1em;
+label{
+    text-align: center;
 }
