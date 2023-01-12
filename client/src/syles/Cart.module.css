@@ -1,0 +1,25 @@
+/* for the cart page  */
+/* .class="border-8 text-white m-32" */
+.cart {
+  margin-top: 80px;
+  margin-left: 32px;
+  margin-right: 32px;
+  color: white;
+  border-radius: 10px solid black;
+}
+/* className="text-black text-3xl mb-4" */
+.shoppingCartTitle {
+  color: black;
+  margin-top: 32px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+/* class="absolute right-32 text-pblue text-2xl" */
+
+.total {
+  display: flex;
+  color: black;
+
+}

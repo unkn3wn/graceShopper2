@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import useCart from "../hooks/useCart";
 import useProducts from "../hooks/useProduct";
 import { useNavigate } from "react-router-dom";
+import styles from "../syles/Cart.module.css";
 
 export default function Cart({ product }) {
   const { fetchCart, cart, editQuantity, deleteItem } = useCart();
@@ -15,9 +16,8 @@ export default function Cart({ product }) {
   // console.log("cart in the Cart.jsx", cart);
 
   return (
-    <div class="border-8 text-white m-32">
-
-      <h1 className="text-black text-3xl mb-4"> Shopping Cart</h1>
+    <div className={styles.cart}>
+      <h1 className={styles.shoppingCartTitle}> Shopping Cart</h1>
       <div>
         {cart.order_products?.map((item) => {
           console.log("inside the cart map:", cart.order_products);
@@ -92,15 +92,12 @@ export default function Cart({ product }) {
           );
         })}
       </div>
-      <div>
-        <h4 class="absolute right-32 text-pblue text-2xl">
-          Total: $
-          {(cart.total = cart.total + Math.floor(cart.total * 0.0925) / 2)}
-        </h4>
-      </div>
-      <div class="mr-auto">
+
+      <div class="mt-10 display flex">
+       
+
         <button
-          class="bg-red-700 p-2 m-2 rounded-full"
+          class="bg-red-700 p-2 m-2 mt-0 rounded-full"
           onClick={async (e) => {
             navigate("/checkout");
           }}
@@ -108,14 +105,24 @@ export default function Cart({ product }) {
           Checkout
         </button>
         <button
-          class="bg-black p-2 m-2 rounded-full"
+          class="bg-black p-2 m-2 mt-0 rounded-full"
           onClick={async (e) => {
             navigate("/products");
           }}
         >
           Continue Shopping
         </button>
+        <div class="mt-3">
+         <h4 className={styles.total}>
+          Total: $
+          {(cart.total = cart.total + Math.floor(cart.total * 0.0925) / 2)}
+        </h4>
       </div>
+
+      </div>
+
+      
+
     </div>
   );
 }
