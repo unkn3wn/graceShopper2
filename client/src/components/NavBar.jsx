@@ -4,6 +4,7 @@ import useUsers from "../hooks/useUsers";
 import useCart from "../hooks/useCart";
 import styles from "../syles/Nav.module.css";
 import { FaBars } from "react-icons/fa";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function NavBar() {
   const { LogoutUser, selectedUser, fetchMe } = useUsers();
@@ -24,7 +25,7 @@ function NavBar() {
   });
 
   return (
-    <div >
+    <div>
       {/* to make the drop down work. Acts like a switch  */}
       <input type="checkbox" id="toggle"></input>
       <nav>
@@ -61,7 +62,15 @@ function NavBar() {
               </>
             ) : null}
           </li>
-
+          <li className={styles.navItem}>
+            {selectedUser.email !== "Guest" ? (
+              <>
+                <Link className={styles.navLink} to="/Cart">
+                  <ShoppingCartIcon/>({total})
+                </Link>
+              </>
+            ) : null}
+          </li>
           <li className={styles.navItem}>
             {selectedUser.email !== "Guest" ? (
               <>
@@ -74,9 +83,6 @@ function NavBar() {
                   }}
                 >
                   Logout
-                </Link>
-                <Link className={styles.navLink} to="/Cart">
-                  Cart ({total})
                 </Link>
               </>
             ) : null}

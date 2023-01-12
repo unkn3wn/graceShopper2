@@ -15,10 +15,8 @@ export default function Cart({ product }) {
   // console.log("cart in the Cart.jsx", cart);
 
   return (
-    <div
-      class="border-8
-                text-white m-32"
-    >
+    <div class="border-8 text-white m-32">
+
       <h1 className="text-black text-3xl mb-4"> Shopping Cart</h1>
       <div>
         {cart.order_products?.map((item) => {
@@ -28,10 +26,7 @@ export default function Cart({ product }) {
             cart.total += item.products.price * (item.quantity / 2);
           }
           return (
-            <div
-              class="display flex
-                    "
-            >
+            <div class="display flex">
               <div className="border w-full bg-white text-pblue mb-4 rounded-16 shadow-2xl ">
                 <div className="flex relative">
                   {" "}

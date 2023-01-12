@@ -33,6 +33,7 @@ nav .navList .navItem {
 nav .navList .navItem:hover {
   background:whitesmoke;
   color: black;
+  border-radius: 300px;
 }
 
 nav .navList .nav-link {
